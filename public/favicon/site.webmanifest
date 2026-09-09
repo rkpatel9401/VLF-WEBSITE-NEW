@@ -1,0 +1,26 @@
+{
+  "name": "Veer Laser Fab — Precision Laser Cutting & CNC Fabrication",
+  "short_name": "Veer Laser Fab",
+  "description": "Precision laser cutting, CNC fabrication, machining, welding and structural fabrication. Dual-facility metal engineering group in Ahmedabad, Gujarat.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7FA84E",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-192x192.png?v=3",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png?v=3",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/apple-touch-icon.png?v=3",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

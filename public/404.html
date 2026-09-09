@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found — Veer Laser Fab</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#7FA84E" />
+    <link rel="icon" href="/favicon/favicon.ico" sizes="48x48" />
+    <style>
+      :root { --brand: #7fa84e; --brand-dark: #5e7f38; --ink: #17181c; --canvas: #f7f8f5; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { height: 100%; }
+      body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--canvas);
+        color: var(--ink);
+        font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        padding: 24px;
+      }
+      .card { max-width: 560px; }
+      .mark {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+      .mark img { width: 48px; height: 48px; border-radius: 14px; background: #fff; padding: 4px; box-shadow: 0 1px 3px rgba(23,24,28,.12); }
+      .mark span { font-size: 13px; font-weight: 800; letter-spacing: .02em; }
+      .code {
+        font-size: clamp(72px, 18vw, 128px);
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: -.03em;
+        color: var(--ink);
+      }
+      .code em { font-style: italic; color: var(--brand-dark); }
+      h1 { font-size: 22px; font-weight: 700; margin: 18px 0 10px; }
+      p { font-size: 15px; line-height: 1.6; color: #4b5563; }
+      .actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 26px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: background .3s, color .3s, border-color .3s;
+      }
+      .btn-primary { background: var(--brand); color: #fff; box-shadow: 0 8px 24px rgba(127,168,78,.28); }
+      .btn-primary:hover { background: var(--brand-dark); }
+      .btn-ghost { border: 1px solid rgba(23,24,28,.25); color: var(--ink); }
+      .btn-ghost:hover { border-color: var(--brand); color: var(--brand-dark); }
+      .contact { margin-top: 36px; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #6b7280; }
+      .contact a { color: var(--brand-dark); text-decoration: none; font-weight: 600; }
+      .contact a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="mark">
+        <img src="/logo.jpg" alt="Veer Laser Fab logo" />
+        <span>VEER LASER FAB</span>
+      </div>
+      <div class="code">4<em>0</em>4</div>
+      <h1>This page didn't make the cut.</h1>
+      <p>The page you're looking for doesn't exist or has moved. Our precision tolerance is ±0.02&nbsp;mm — our URLs are supposed to be exact too.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Back to Home</a>
+        <a class="btn btn-ghost" href="/#contact">Request a Quote</a>
+      </div>
+      <p class="contact">
+        <a href="tel:+919974091289">+91 99740 91289</a> &nbsp;·&nbsp; <a href="mailto:veerlaserfab@gmail.com">veerlaserfab@gmail.com</a>
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Veer Laser Fab",
+  "description": "Precision laser cutting, CNC fabrication, machining, welding & structural fabrication dual-facility metal engineering group in Ahmedabad, Gujarat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
