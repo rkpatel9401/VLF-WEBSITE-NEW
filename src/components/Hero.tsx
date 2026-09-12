@@ -34,17 +34,27 @@ export default function Hero() {
 
   return (
     <section id="top" className={`relative flex min-h-screen items-end overflow-hidden bg-ink min-h-[640px] sm:min-h-[720px] ${loaded ? "hero-in" : ""}`}>
-      {/* background photo with parallax wrapper + slow zoom */}
+      {/* background photo with parallax wrapper + slow zoom.
+          Art direction: dedicated portrait shot on phones (<md),
+          original wide shot on md+ screens. */}
       <div ref={bgRef} className="absolute inset-0 will-change-transform">
-        <img
-          src={img("/images/hero-background.webp")}
-          alt="Veer Laser Fab precision CNC fiber laser cutting machine head in operation"
-          className="animate-hero-zoom h-full w-full object-cover object-[64%_30%] sm:object-[64%_40%] md:object-center"
-          width={2048}
-          height={1120}
-          {...({ fetchpriority: "high" } as object)}
-          decoding="async"
-        />
+        <picture>
+          <source
+            media="(max-width: 767.98px)"
+            srcSet={img("/images/hero-mobile.jpg")}
+            width={2160}
+            height={3840}
+          />
+          <img
+            src={img("/images/hero-background.webp")}
+            alt="Veer Laser Fab precision CNC fiber laser cutting machine head in operation"
+            className="animate-hero-zoom h-full w-full object-cover object-[70%_60%] md:object-center"
+            width={2048}
+            height={1120}
+            {...({ fetchpriority: "high" } as object)}
+            decoding="async"
+          />
+        </picture>
       </div>
       {/* legibility gradient + brand green tint */}
       <div

@@ -46,8 +46,23 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=3" />
     <link rel="manifest" href="/favicon/site.webmanifest?v=3" />
 
-    <!-- Perf: hero image is the LCP element — preload at high priority -->
-    <link rel="preload" as="image" href="/images/hero-background.webp" fetchpriority="high" />
+    <!-- Perf: hero image is the LCP element — preload at high priority.
+         Device-scoped so phones fetch only the portrait hero and larger
+         screens only the wide one (no double download). -->
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-mobile.jpg"
+      media="(max-width: 767.98px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-background.webp"
+      media="(min-width: 768px)"
+      fetchpriority="high"
+    />
 
     <!-- Fonts: Fraunces (display) · Inter (body) · JetBrains Mono (data)
          Self-hosted in /fonts — no third-party request, loaded asynchronously

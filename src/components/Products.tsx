@@ -55,6 +55,28 @@ function ProductArt({ art }: { art: string }) {
             <path d="M92 60h10" />
           </>
         );
+      case "dryer":
+        return (
+          <>
+            <ellipse cx="60" cy="40" rx="8" ry="22" />
+            <path d="M60 18h34v44H60" />
+            <path d="M94 24c10 0 10 32 0 32" />
+            <path d="M60 62l-8 20M94 62l8 20" />
+            <path d="M52 40h-8M46 32v16" opacity="0.55" />
+            <path d="M68 30l6 8-6 8-6-8z" opacity="0.7" />
+          </>
+        );
+      case "evaporator":
+        return (
+          <>
+            <path d="M46 20h28v46a14 8 0 0 1-28 0z" />
+            <path d="M46 20c-4 0-4 46 0 46M74 20c4 0 4 46 0 46" opacity="0.55" />
+            <path d="M60 20V10M46 74l-6 14M74 74l6 14" />
+            <path d="M74 34h16v16H74" opacity="0.7" />
+            <path d="M90 34v-6M90 50v6" opacity="0.55" />
+            <path d="M52 84h16" opacity="0.55" />
+          </>
+        );
       case "mill":
         return (
           <>
