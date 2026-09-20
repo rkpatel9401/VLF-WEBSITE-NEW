@@ -61,51 +61,6 @@ export function IconCncMachining({ className }: P) {
   );
 }
 
-export function IconWelding({ className }: P) {
-  return (
-    <svg viewBox="0 0 24 24" {...S} className={className} aria-hidden="true">
-      <path d="M14.5 3.5 18 7l-5.5 5.5-3.5-3.5z" />
-      <path d="M9 10.5 6.5 13" />
-      <path d="M4.5 15 3 16.5M7.5 17.5l-1 2M3.5 12.5 1.5 13" opacity="0.9" />
-      <path d="M9 21h12" />
-      <path d="M12.5 21c.5-1.6 2-2.5 3.5-2.5s3 .9 3.5 2.5" opacity="0.35" />
-    </svg>
-  );
-}
-
-export function IconStructure({ className }: P) {
-  return (
-    <svg viewBox="0 0 24 24" {...S} className={className} aria-hidden="true">
-      <path d="M3 18.5h18" />
-      <path d="M3 18.5 8 8.5h8l5 10" />
-      <path d="M8 8.5 12 18.5l4-10" />
-      <path d="M12 8.5v-3M9.5 5.5h5" opacity="0.35" />
-    </svg>
-  );
-}
-
-export function IconSheetMetal({ className }: P) {
-  return (
-    <svg viewBox="0 0 24 24" {...S} className={className} aria-hidden="true">
-      <path d="M4 20V7l7-3.5L20 8v12" />
-      <path d="M4 7l7 4 9-4" />
-      <path d="M11 11v9" />
-      <path d="M7 20h13" opacity="0.35" />
-    </svg>
-  );
-}
-
-export function IconVessel({ className }: P) {
-  return (
-    <svg viewBox="0 0 24 24" {...S} className={className} aria-hidden="true">
-      <path d="M8 5.5a4 2.3 0 0 1 8 0V17a4 2.3 0 0 1-8 0z" />
-      <ellipse cx="12" cy="5.5" rx="4" ry="2.3" />
-      <path d="M9.5 18.8 8.5 22M14.5 18.8l1 3.2" />
-      <path d="M16 10h3.5M16 13h2.5" opacity="0.6" />
-    </svg>
-  );
-}
-
 export function IconCrane({ className }: P) {
   return (
     <svg viewBox="0 0 24 24" {...S} className={className} aria-hidden="true">
@@ -127,17 +82,6 @@ export function IconSupport({ className }: P) {
   );
 }
 
-export function IconSeal({ className }: P) {
-  return (
-    <svg viewBox="0 0 24 24" {...S} className={className} aria-hidden="true">
-      <circle cx="12" cy="9.5" r="6.5" />
-      <circle cx="12" cy="9.5" r="3.4" strokeDasharray="2.2 2" opacity="0.7" />
-      <path d="m9.6 9.8 1.7 1.7 3.1-3.6" />
-      <path d="m8.4 14.9-2 6.1 5.6-2.4 5.6 2.4-2-6.1" />
-    </svg>
-  );
-}
-
 export function IconTick({ className }: P) {
   return (
     <svg viewBox="0 0 24 24" {...S} className={className} aria-hidden="true">
@@ -147,16 +91,8 @@ export function IconTick({ className }: P) {
   );
 }
 
-export function IconArrowRight({ className }: P) {
-  return (
-    <svg viewBox="0 0 24 24" {...S} className={className} aria-hidden="true">
-      <path d="M4 12h15" />
-      <path d="m13 6 6 6-6 6" />
-    </svg>
-  );
-}
-
-/* ---------- Brand logo mark: droplet over three layered V-wings ---------- */
+/* Kept for future header/footer brand-lockup work.
+   LogoMark/Wordmark are intentionally unused right now. */
 export function LogoMark({ className, tone = "light" }: P & { tone?: "light" | "dark" }) {
   const wing1 = tone === "dark" ? "#FFFFFF" : "#17181C";
   return (

@@ -432,6 +432,10 @@ body {
   .cert-dot-fill {
     animation: none !important;
   }
+  .cert-sweep::after {
+    animation: none !important;
+    opacity: 0 !important;
+  }
   .img-zoom img,
   .spec-card,
   .btn {
@@ -494,5 +498,73 @@ body {
 .cert-dot-fill {
   transform-origin: left center;
   animation: dotfill 10s linear forwards;
+}
+
+/* ---------- certifications carousel — light sweep + floor reflection on the active card ---------- */
+.cert-sweep {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 5;
+}
+.cert-sweep::after {
+  content: "";
+  position: absolute;
+  top: -25%;
+  bottom: -25%;
+  left: -45%;
+  width: 32%;
+  background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.32) 50%, transparent 100%);
+  transform: skewX(-14deg);
+  opacity: 0;
+  animation: cert-sweep-move 2.8s var(--ease-out-expo) 0.5s 1 both;
+}
+@keyframes cert-sweep-move {
+  0% {
+    left: -45%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
+}
+.cert-reflection {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.22;
+  filter: blur(1.5px);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 42%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 42%);
+}
+
+/* ---------- certificate download protection ---------- */
+.cert-protected img,
+.cert-protected svg {
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.cert-protected {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.cert-protected::after {
+  /* transparent shield — intercepts long-press/save-image on touch devices */
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
 }
 

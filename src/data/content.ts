@@ -59,6 +59,7 @@ export const STORY = [
   "Veer Laser Fab was founded in 2018 in Kathwada GIDC, Ahmedabad, with a single 2,000W CNC fiber laser cutting machine and one conviction — that Indian OEMs deserve world-class precision without world-class lead times.",
   "Within three years the shop floor grew into a complete fabrication line: VMC machining, press-brake forming, welding and structural assembly — formalised by ISO 9001:2015 certification in 2021. By 2024 our components were shipping into international OEM supply chains.",
   "In 2026 we commissioned Unit 2 at Kuha — a 12,000W fiber laser, 6,000W tube laser and 500T tandem press brake line that makes Veer the highest laser-power fabricator in Gujarat. Two facilities. One standard: ±0.02 mm.",
+  "Our manufacturing infrastructure is designed to support OEMs, renewable-energy companies, EPC contractors and industrial-equipment builders — with precision components and heavy assemblies built strictly to customer drawings, international standards and traceable mill test certification.",
 ];
 
 export const FOUNDER_QUOTE = {
@@ -67,21 +68,6 @@ export const FOUNDER_QUOTE = {
   role: "Proprietor",
 };
 
-export const VMC_CARDS = [
-  {
-    title: "Vision",
-    desc: "To be India's most trusted precision fabrication partner for OEM and export programmes.",
-  },
-  {
-    title: "Mission",
-    desc: "Deliver world-class cutting, forming and welding quality with uncompromising on-time discipline.",
-  },
-  {
-    title: "Values",
-    desc: "Precision, Quality, Innovation, Reliability, Partnership — the five tolerances we never relax.",
-  },
-];
-
 export const VALUES = [
   {
     title: "Precision",
@@ -89,7 +75,7 @@ export const VALUES = [
   },
   {
     title: "Quality",
-    desc: "ISO 9001:2015-documented workflows with full job traceability from raw material to dispatch.",
+    desc: "Integrated ISO 9001 / 14001 / 45001-documented workflows with full MTC traceability from raw material to dispatch.",
   },
   {
     title: "Innovation",
@@ -178,12 +164,12 @@ export const FACILITIES: Facility[] = [
     name: "Unit 1 — Kathwada",
     location: "Kathwada GIDC, Ahmedabad",
     established: "EST. 2018",
-    address: "Plot No. 47-48, Kathwada GIDC, Ahmedabad, Gujarat 382430",
+    address: "Plot No. 518, Road Number 14, Kathwada GIDC, Odhav, Ahmedabad, Gujarat 382430",
     area: "4,500 m²",
     image: "/images/facility-unit1.jpg",
     imageAlt: "Unit 1 machine shop in Kathwada GIDC — CNC fiber laser and VMC machining floor",
     blurb:
-      "The original precision shop — laser cutting, VMC machining, forming and welding under one roof, running ISO-documented workflows since day one.",
+      "The original precision shop — CNC laser cutting, CNC bending, 4-axis VMC machining, TIG/MIG welding and finished sheet-metal enclosures under one roof, running ISO-documented workflows since day one.",
     flagship: "DNE 2,000 W Fiber Laser",
     machines: [
       {
@@ -199,12 +185,14 @@ export const FACILITIES: Facility[] = [
       },
       {
         name: "VMC Machining Centre",
-        model: "HAAS VF4",
+        model: "HAAS VF4 · 4-Axis",
         icon: "cnc",
         specs: [
           { k: "X-Axis Travel", v: "1,270 mm" },
           { k: "Y-Axis Travel", v: "508 mm" },
           { k: "Z-Axis Travel", v: "635 mm" },
+          { k: "4th-Axis Rotary", v: "Indexed machining" },
+          { k: "Tolerance", v: "±0.01 mm" },
           { k: "Application", v: "Precision components" },
         ],
       },
@@ -221,11 +209,11 @@ export const FACILITIES: Facility[] = [
       },
       {
         name: "Support Equipment",
-        model: "Welding · Shearing · Finishing",
+        model: "Welding · Drilling · Finishing",
         icon: "support",
         specs: [
           { k: "Welding", v: "MIG / TIG / SMAW bays" },
-          { k: "Cutting & Drilling", v: "Shear, radial drill" },
+          { k: "Drilling", v: "Radial & magnetic · up to Ø 40 mm" },
           { k: "Finishing", v: "Grinding & deburr" },
           { k: "Quality", v: "In-house inspection" },
         ],
@@ -238,12 +226,12 @@ export const FACILITIES: Facility[] = [
     location: "Kuha, Ahmedabad",
     established: "EST. 2026",
     badge: "NEW — HIGHEST POWER IN GUJARAT",
-    address: "Veer Laser Fab, Unit 2, Kuha, Daskroi, Ahmedabad, Gujarat 382433",
+    address: "Survey No. 2231, Indore – Ahmedabad Hwy, Opp. Shree Ram Industrial Park, Kuha, Daskroi, Ahmedabad, Gujarat 382433",
     area: "7,500 m²",
     image: "/images/facility-unit2.jpg",
     imageAlt: "Unit 2 heavy fabrication hall at Kuha with seven overhead EOT cranes",
     blurb:
-      "The heavy-fabrication flagship — 12,000W sheet laser, 6,000W tube laser and 500T tandem braking, engineered for large structural and process-equipment programmes.",
+      "The heavy-fabrication flagship — 12,000W sheet laser, 6,000W tube laser, 500T tandem braking, 10-Ton EOT cranes and an 18-station welding fleet, engineered for large structural, skid and process-equipment programmes.",
     flagship: "D-Power 12,000 W Fiber Laser",
     machines: [
       {
@@ -253,8 +241,10 @@ export const FACILITIES: Facility[] = [
         specs: [
           { k: "Rated Power", v: "12,000 W" },
           { k: "Cutting Bed", v: "8,000 × 2,500 mm" },
+          { k: "Table", v: "Dual exchange shuttle" },
           { k: "Mild Steel Capacity", v: "up to 40 mm" },
           { k: "Cutting Speed", v: "10 m+/min" },
+          { k: "Assist Gases", v: "Nitrogen / Oxygen" },
         ],
       },
       {
@@ -264,7 +254,8 @@ export const FACILITIES: Facility[] = [
         specs: [
           { k: "Rated Power", v: "6,000 W" },
           { k: "Tube Diameter", v: "up to Ø 360 mm" },
-          { k: "Profiles", v: "Round, square, rectangular" },
+          { k: "Profiles", v: "Round, square, RHS, channel" },
+          { k: "Joint Prep", v: "Interlocking cut joints" },
           { k: "Accuracy", v: "±0.02 mm" },
         ],
       },
@@ -273,21 +264,45 @@ export const FACILITIES: Facility[] = [
         model: "500 T Tandem",
         icon: "brake",
         specs: [
-          { k: "Bending Force", v: "500 T" },
-          { k: "Bending Length", v: "up to 8,000 mm" },
+          { k: "Bending Force", v: "2 × 250 T · 500 T combined" },
+          { k: "Bending Length", v: "8,000 mm tandem · 4,000 mm single" },
           { k: "Configuration", v: "Tandem synchronised" },
+          { k: "Crowning", v: "Dynamic CNC compensation" },
           { k: "Application", v: "Heavy plate forming" },
         ],
       },
       {
-        name: "Support Equipment",
-        model: "Heavy Welding · Prep · Finishing",
+        name: "Heavy Welding Fleet",
+        model: "18 × 400 A MIG Stations",
         icon: "support",
         specs: [
-          { k: "Welding", v: "Heavy structural bays" },
+          { k: "Welding", v: "18 × 400 A inverter MIG" },
+          { k: "Welder Quals", v: "AWS D1.1 · ASME Sec. IX" },
+          { k: "Drilling & Tapping", v: "Radial & magnetic · Ø 40 mm" },
           { k: "Edge Preparation", v: "Bevelling & planing" },
-          { k: "Drilling & Tapping", v: "Magnetic & radial" },
           { k: "Finishing", v: "Grinding & paint prep" },
+        ],
+      },
+      {
+        name: "Section & Profile Rolling",
+        model: "3-Roll Hydraulic",
+        icon: "support",
+        specs: [
+          { k: "Rolling Method", v: "3-roll hydraulic profile" },
+          { k: "Sections", v: "Channels, angles, beams, flats" },
+          { k: "Products", v: "Rings, curves & cylindrical shells" },
+          { k: "Application", v: "Tower rings · stiffener bands" },
+        ],
+      },
+      {
+        name: "Material Handling",
+        model: "EOT Cranes · 10 T",
+        icon: "crane",
+        specs: [
+          { k: "Lift Capacity", v: "up to 10 T per crane" },
+          { k: "Coverage", v: "Full fabrication bay spans" },
+          { k: "Duty", v: "Plate & weldment transit" },
+          { k: "Safety", v: "Dual-hoist fail-safe brakes" },
         ],
       },
     ],
@@ -305,43 +320,43 @@ export const SERVICES: Service[] = [
   {
     icon: "laser",
     title: "CNC Fiber Laser Cutting",
-    line: "Up to 40 mm MS on an 8,000 × 2,500 mm bed at 12,000 W — ±0.02 mm accuracy.",
+    line: "12,000 W fiber laser with dual shuttle tables — 40 mm MS / 25 mm SS cut with nitrogen or oxygen assist for dross-free edges.",
     image: "/process/laser.png",
   },
   {
     icon: "tube",
     title: "Tube Laser Cutting",
-    line: "6,000 W tube laser cutting rounds, squares and sections up to Ø 360 mm.",
+    line: "6,000 W 3D tube laser — round, square, RHS and channel profiles with interlocking cut joints up to Ø 360 mm.",
     image: "/process/tube.png",
   },
   {
     icon: "brake",
     title: "Press Brake Bending",
-    line: "Up to 500 T tandem braking with bending lengths to 8,000 mm.",
+    line: "2 × 250 T synchronised press brakes (500 T combined) with dynamic crowning — bends verified to ±0.2°.",
     image: "/process/brake.png",
   },
   {
     icon: "cnc",
     title: "CNC / VMC Machining",
-    line: "HAAS VF4 VMC for tight-tolerance machined faces, bores and patterns.",
+    line: "4-axis HAAS VF4 VMC for machined faces, bores and patterns at ±0.01 mm — CMM-verified quality.",
     image: "/process/cnc.png",
   },
   {
     icon: "weld",
     title: "Welding & Fabrication",
-    line: "MIG / TIG / SMAW weldments with full job traceability and ISO-documented procedures.",
+    line: "18 × 400 A MIG fleet with AWS D1.1 / ASME IX certified welders — WPS / PQR-documented and fully traceable.",
     image: "/process/weld.png",
   },
   {
     icon: "structure",
     title: "Structural Fabrication",
-    line: "PEB buildings, trusses, lattice work and heavy structural assemblies — shop-delivered or erected.",
+    line: "Plate girders, box columns, portal frames and PEB from plate up to 50 mm — zero-clash erection fit-up.",
     image: "/process/structure.png",
   },
   {
     icon: "sheet",
     title: "Sheet Metal Fabrication",
-    line: "Enclosures, cable trays and panels from 0.5 mm — cut, formed and finished.",
+    line: "IP55/IP65 enclosures, panels and racks from 0.5–4.0 mm CRCA / GI / SS — stud-welded and powder-coated.",
     image: "/process/sheet.png",
   },
   {
@@ -398,9 +413,9 @@ export const PRODUCTS: Product[] = [
   { name: "Sheet Metal Enclosures", spec: "From 0.5 mm · powder-coat ready", art: "enclosure", image: "/products/enclosure.webp", category: "fabricated" },
   { name: "Cable Trays", spec: "Perforated & ladder-type trays", art: "tray", image: "/products/tray.webp", category: "fabricated" },
   { name: "Transformer Tanks", spec: "Leak-tested radiator-ready tanks", art: "transfo", image: "/products/transfo.webp", category: "fabricated" },
-  { name: "Windmill Internal Structures", spec: "TA internals · HDG finished", art: "wind", image: "/products/wind.webp", category: "fabricated" },
+  { name: "Windmill Internal Structures", spec: "TA internals · platforms · HDG finished", art: "wind", image: "/products/wind.webp", category: "fabricated" },
   { name: "Automotive Parts", spec: "Laser-cut OEM components", art: "auto", image: "/products/auto.webp", category: "fabricated" },
-  { name: "Structural Steel", spec: "Beams, columns & trusses", art: "truss", image: "/products/truss.webp", category: "fabricated" },
+  { name: "Structural Steel", spec: "Beams, columns, trusses & tower members", art: "truss", image: "/products/truss.webp", category: "fabricated" },
   { name: "Precision Laser-Cut OEM Parts", spec: "±0.02 mm cut accuracy", art: "part", image: "/products/part.webp", category: "fabricated" },
 ];
 
@@ -419,7 +434,7 @@ export const SUZLON = {
     pre: "Precision-Manufactured Wind Tower Internal Structures & ",
     em: "Components",
   },
-  client: "Suzlon Energy Ltd",
+  client: "Suzlon Energy Ltd — Approved Vendor",
   image: "/images/suzlon-tower.webp",
   video: "/videos/suzlon.mp4",
   imageAlt:
@@ -427,6 +442,7 @@ export const SUZLON = {
   body: [
     "For Suzlon's S144 / S140 and S160 m hub-height turbine platforms, Veer Laser Fab manufactures the complete Transition Adapter (TA) Internals — a hot-dip-galvanised structural package that forms the internal working-platform system inside the tower's transition piece.",
     "Every beam, bracket and ladder is laser-cut to ±0.02 mm, welded to documented procedures, galvanised and staged as erection-ready sets for multi-batch delivery against the programme schedule.",
+    "Each batch is verified before dispatch — 100% dimensional inspection, weld testing with universal weld gauges, and dry-film-thickness (DFT) verification of the galvanised coating.",
   ],
   includes: [
     "Internal Platform",
@@ -436,6 +452,8 @@ export const SUZLON = {
     "Mounting Brackets",
     "Cable Support System",
     "Ladder Safety Hoop & Support",
+    "Cable Ladder Systems",
+    "Beveled Flange Reinforcement Plates",
     "Complete Tower Internal Assembly",
   ],
   tags: [
@@ -473,7 +491,7 @@ export const MILACRON = {
     "Precision-welded box-type heavy machine base frame fabricated and machined by Veer Laser Fab for Milacron",
   body: [
     "For Milacron we fabricate precision-welded box-type and beam-type steel base frames that carry large machine assemblies, including injection moulding machines. Each base is cut, welded, stress-relieved and machined on critical faces to exact load-bearing specifications.",
-    "Finished bases are primed, painted and dispatched as staged production batches — with ladder-frame support structures completing the scope for each machine set.",
+    "Finished bases are shot-blasted, primed and finished with multi-coat industrial epoxy paint, then dispatched as staged production batches — with ladder-frame support structures completing the scope for each machine set.",
   ],
   includes: [
     "Box-Type Base Frames",
@@ -490,7 +508,7 @@ export const MILACRON = {
 export const OTHER_WORK = [
   {
     title: "Structural Steel / PEB Buildings",
-    caption: "Columns, rafters and bracing fabricated and delivered bolt-ready for site erection.",
+    caption: "Columns, rafters and moment-connection frames fabricated and delivered bolt-ready for site erection.",
     image: "/images/gallery-peb.webp",
     alt: "Pre-engineered structural steel building frame fabricated by Veer Laser Fab",
   },
@@ -502,7 +520,7 @@ export const OTHER_WORK = [
   },
   {
     title: "Skid Fabrication",
-    caption: "Process and machine skids — welded, machined and finished to drawing.",
+    caption: "Compressor, generator and hydraulic power-pack bases — welded, stress-relieved and machined to drawing.",
     image: "/images/milacron-base.webp",
     alt: "Heavy-duty fabricated machine skid staged for dispatch",
   },
@@ -520,7 +538,7 @@ export const OTHER_WORK = [
   },
   {
     title: "Truss / Lattice Structural Work",
-    caption: "Roof trusses and lattice structures cut, fitted and welded in jigs.",
+    caption: "Roof trusses, lattice structures and transmission-tower members cut, fitted and welded in jigs.",
     image: "/images/unit2.webp",
     alt: "Large truss and structural assemblies under the EOT cranes at Unit 2, Kuha",
   },
@@ -532,14 +550,14 @@ export const INDUSTRIES = [
   { name: "Automobile & Auto Components", icon: "Car" },
   { name: "Export / International OEM", icon: "Ship" },
   { name: "Wind Energy", icon: "Wind" },
+  { name: "Solar & Renewable Energy", icon: "Sun" },
   { name: "Plastic & Polymer", icon: "FlaskConical" },
-  { name: "Textile Machinery", icon: "Cog" },
   { name: "Railways", icon: "TrainFront" },
   { name: "Transformer Manufacturing", icon: "Plug" },
   { name: "Agricultural Engineering", icon: "Tractor" },
   { name: "Building & Construction", icon: "Building2" },
   { name: "Power Plant Sector", icon: "Zap" },
-  { name: "Chemical & Process Plants", icon: "Factory" },
+  { name: "Power Transmission", icon: "PlugZap" },
   { name: "Telecommunications", icon: "RadioTower" },
 ] as const;
 
@@ -574,90 +592,96 @@ export type Certificate = {
 
 export const CERTIFICATIONS: Certificate[] = [
   {
-    id: "iso-9001-tuv",
-    image: "/certificates/iso-9001-tuv.svg",
-    badge: "TÜV SÜD",
+    id: "iso-9001",
+    image: "/certificates/iso-9001.jpg",
+    badge: "TÜV INDIA",
     emblems: ["TÜV", "IAF"],
-    docTitle: "Certificate of Registration",
+    docTitle: "Certificate — Management System",
     title: "ISO 9001:2015",
     subtitle: "Quality Management System",
-    issuer: "Issued by TÜV SÜD · IAF-accredited certification body",
+    issuer: "TÜV INDIA Pvt. Ltd. · TÜV NORD Group · IAF-accredited (NABCB)",
+    certNo: "Registration No. IND 100 26397490 · Valid through 11 July 2029",
+    scope: "Weld & assembly parts of wind-mill tubular towers · heavy structural fabrication",
     accent: "#0f4c92",
   },
   {
-    id: "iso-14001-tuv",
-    image: "/certificates/iso-14001-tuv.svg",
-    badge: "TÜV SÜD",
+    id: "iso-14001",
+    image: "/certificates/iso-14001.jpg",
+    badge: "TÜV INDIA",
     emblems: ["TÜV", "IAF"],
-    docTitle: "Certificate of Registration",
+    docTitle: "Certificate — Management System",
     title: "ISO 14001:2015",
     subtitle: "Environmental Management System",
-    issuer: "Issued by TÜV SÜD · IAF-accredited certification body",
+    issuer: "TÜV INDIA Pvt. Ltd. · TÜV NORD Group · IAF-accredited (NABCB)",
+    certNo: "Registration No. IND 104 26397490 · Valid 12.07.2026 – 11.07.2029",
+    scope: "Manufacturing of weld and assembly parts of wind-mill tubular tower and heavy structural fabrication work",
     accent: "#1f7a3d",
   },
   {
-    id: "iso-45001-tuv",
-    image: "/certificates/iso-45001-tuv.svg",
-    badge: "TÜV SÜD",
+    id: "iso-45001",
+    image: "/certificates/iso-45001.jpg",
+    badge: "TÜV INDIA",
     emblems: ["TÜV", "IAF"],
-    docTitle: "Certificate of Registration",
+    docTitle: "Certificate — Management System",
     title: "ISO 45001:2018",
     subtitle: "Occupational Health & Safety Management System",
-    issuer: "Issued by TÜV SÜD · IAF-accredited certification body",
+    issuer: "TÜV INDIA Pvt. Ltd. · TÜV NORD Group · IAF-accredited (NABCB)",
+    // TODO(verify): re-check registration number & validity dates on the physical ISO 45001 certificate scan.
     accent: "#c05621",
   },
   {
-    id: "wps-pqr-3834",
-    image: "/certificates/wps-pqr-3834.svg",
-    badge: "IW & MI COUNCIL",
-    emblems: ["IW", "MI"],
-    docTitle: "Certificate of Welding Process & Metrology Conformance",
-    title: "EN ISO 3834-2 / WPS & PQR",
-    subtitle: "Welding QA & Metrology Calibration Master (WPS / PQR)",
-    issuer: "Accredited Issuing Body: International Welding & Metrology Inspection Council",
-    certNo: "Registration ID: WPS-PQR-MET-3834",
-    scope: "Calibrated & Audited",
+    id: "iso-3834",
+    image: "/certificates/iso-3834.jpg",
+    badge: "UK CERT",
+    emblems: ["UKC", "IAF"],
+    docTitle: "Certificate of Conformity — Welding Quality",
+    title: "ISO 3834-2:2021",
+    subtitle: "Fusion Welding Quality · WPS / PQR / Welder Quals",
+    issuer: "Accredited Issuing Body: UK Cert · welders certified under AWS D1.1 / ASME Section IX",
+    certNo: "Certificate No. UQ-2026060531",
+    scope: "Calibrated & audited welding quality management for structural fabrication",
     accent: "#1e3a5f",
   },
   {
-    id: "iso-9001-ias",
-    image: "/certificates/iso-9001-ias.svg",
-    badge: "IAS · IAF",
-    emblems: ["IAS", "IAF"],
-    docTitle: "Certificate of Registration",
-    title: "ISO 9001:2015",
-    subtitle: "Quality Management System",
-    issuer: "Accredited by IAS · Recognised by IAF",
-    certNo: "Accreditation No. MSCB-119",
-    scope: "Fiber Laser Cutting · CNC Fabrication · Machining",
-    accent: "#33658a",
+    id: "en-1090",
+    image: "/certificates/en-1090.jpg",
+    badge: "UK CERT",
+    emblems: ["EXC", "CE"],
+    docTitle: "Certificate of Conformity — Structural Steel Execution",
+    title: "EN 1090-2:2018 (EXC-3)",
+    subtitle: "Execution of Steel Structures & Towers",
+    issuer: "Accredited Issuing Body: UK Cert · factory production control audited",
+    certNo: "Certificate No. UQ-2026060530 · Execution Class 3 (EXC-3)",
+    scope: "Welded structural components · wind towers · heavy assemblies · CE-marked structural steelwork",
+    accent: "#3f6212",
   },
   {
-    id: "msme-udyam",
-    image: "/certificates/msme-udyam.svg",
+    id: "msme",
+    image: "/certificates/msme.jpg",
     badge: "Government of India",
     emblems: ["UD", "GoI"],
     docTitle: "Udyam Registration Certificate",
     title: "MSME Registered",
-    subtitle: "Micro, Small & Medium Enterprise",
-    issuer: "Udyam-registered enterprise · Government of India",
+    subtitle: "Micro Enterprise · Manufacturing",
+    issuer: "Ministry of MSME, Government of India",
+    certNo: "Udyam No. UDYAM-GJ-01-0067561 · GIDC Kathwada, Ahmedabad",
     accent: "#9f1239",
   },
   {
-    id: "gst-verified",
-    image: "/certificates/gst-verified.svg",
+    id: "gst",
+    image: "/certificates/gst.jpg",
     badge: "GST Network",
     emblems: ["GST", "IN"],
     docTitle: "Goods & Services Tax Registration",
-    title: "GST Verified",
+    title: "GST Registered",
     subtitle: "Active taxpayer · regular filings",
     issuer: "State: Gujarat (24)",
     certNo: "GSTIN 24CIVPP0310F1ZF",
     accent: "#4338ca",
   },
   {
-    id: "iec-dgft",
-    image: "/certificates/iec-dgft.svg",
+    id: "iec",
+    image: "/certificates/iec.jpg",
     badge: "DGFT · GoI",
     emblems: ["DG", "FT"],
     docTitle: "Import – Export Code",
@@ -669,7 +693,7 @@ export const CERTIFICATIONS: Certificate[] = [
   },
 ];
 
-export const QUALITY_QUOTE = "Precision is not just our process, it's our promise.";
+export const QUALITY_QUOTE = "Every production run adheres strictly to client-approved Quality Assurance Plans, material test traceability (MTC 3.1), EN 1090 EXC-3 execution standards and digital dimensional inspection.";
 
 export const WHY_US = [
   {
@@ -688,8 +712,8 @@ export const WHY_US = [
     icon: "Layers",
   },
   {
-    title: "ISO 9001:2015 Certified",
-    desc: "Documented, audited workflows with full traceability from material certificate to dispatch.",
+    title: "Multi-ISO Certified",
+    desc: "ISO 9001, 14001 & 45001-certified, with ISO 3834-2 welding control and EN 1090 EXC-3 structural execution — audited end to end.",
     icon: "Award",
   },
   {
@@ -816,6 +840,6 @@ export const SERVICE_OPTIONS = [
   "Structural Fabrication",
   "Sheet Metal Fabrication",
   "Process Equipment",
+  "Wind Energy Internals",
+  "Power Transmission Towers",
 ];
-
-export const FOOTER_TAGLINES = ["Precision Driven", "Quality Assured", "Customer Focused", "Partnerships That Last"];

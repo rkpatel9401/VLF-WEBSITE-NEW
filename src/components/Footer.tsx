@@ -1,5 +1,5 @@
 import { ArrowUp } from "lucide-react";
-import { CONTACT, FOOTER_TAGLINES, INDUSTRIES, NAV_LINKS } from "../data/content";
+import { CONTACT, INDUSTRIES, NAV_LINKS } from "../data/content";
 
 /* ---------- Social media — official brand colours + working links ---------- */
 type Social = {
@@ -98,7 +98,7 @@ export default function Footer() {
             OEM and export clients across two facilities since 2018.
           </p>
           <div className="mt-7 flex flex-wrap gap-2">
-            {FOOTER_TAGLINES.map((t) => (
+            {["Precision Driven", "Quality Assured", "Customer Focused", "Partnerships That Last"].map((t) => (
               <span
                 key={t}
                 className="rounded-btn border border-white/15 px-3 py-1.5 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-white/60 transition-colors duration-300 hover:border-brand hover:text-brand"
@@ -182,7 +182,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex flex-wrap gap-2 pt-1">
-              {["ISO 9001:2015", "MSME", "GST", "IEC"].map((b) => (
+              {["ISO 9001:2015", "ISO 14001:2015", "ISO 45001:2018", "ISO 3834-2", "EN 1090-2 EXC-3", "MSME", "GST", "IEC"].map((b) => (
                 <span key={b} className="rounded-btn border border-brand/30 bg-brand/10 px-2.5 py-1 font-sans text-[9.5px] font-semibold tracking-[0.14em] text-brand">
                   {b}
                 </span>
